@@ -1,0 +1,43 @@
+.navbar {
+    background-color: #2c3e50;
+    color: white;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* Ensures the navbar stays on top */
+  }
+  
+  .navbar .logo {
+    font-size: 1.5rem;
+  }
+  
+  .nav-links a {
+    color: white;
+    margin: 0 1rem;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .nav-links a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Ensure that navbar content is aligned and responsive */
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      text-align: center;
+    }
+    
+    .nav-links {
+      margin-top: 1rem;
+    }
+  
+    .nav-links a {
+      margin: 0.5rem 0;
+    }
+  }
+  
